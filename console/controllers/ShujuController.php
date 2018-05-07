@@ -44,6 +44,7 @@ class ShujuController extends Controller{
     public function actionIndex()
     {
 
+        exit;
         $redis = Yii::$app->redis;
         $urlList = $value = $redis->get('data-thinking-url');
         $urlList = json_decode($urlList,true);
